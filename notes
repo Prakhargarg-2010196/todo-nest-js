@@ -1,0 +1,16 @@
+modules are some structuring components that help nest to draw application graph as to which component is depending on what and how to structure the application well
+ 
+
+modules carry 4 things 
+
+1. Providers : These are major nest component classes that can be used internally as providers []  and as well as externally using exports[].
+
+2. imports: These are the modules that are required by the current module for usage and should be imported 
+
+3. exports : Providers from current module that need to be exported for use by other services.
+
+4. controllers : These are the components that help us define the request and response basically http data in general.
+
+The modules can use only those providers that are either provided by them or exported from the modules in imports []. 
+
+modules are singletons (meaning : same instance can be shared b/w several modules)
